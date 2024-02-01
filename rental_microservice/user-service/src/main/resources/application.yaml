@@ -1,0 +1,22 @@
+spring:
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+    
+  datasource:
+    url: "jdbc:mysql://localhost:3306/homework"
+    username: root
+    password: root
+    
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: update
+
+  redis:
+    host: localhost
+    port: 6379
+     
+server:
+  port: 8082
+      

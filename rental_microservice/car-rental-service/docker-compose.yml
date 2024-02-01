@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  car-rental-service:
+    image: car-rental-service:latest
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: "jdbc:mysql://localhost:3306/homework"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_HIBERNATE_DDL_AUTO: "update"

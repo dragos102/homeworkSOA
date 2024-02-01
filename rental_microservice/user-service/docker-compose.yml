@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  user-service:
+    image: user-service:latest
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: "jdbc:mysql://localhost:3306/homework"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_HIBERNATE_DDL_AUTO: "update"
+      SPRING_REDIS_HOST: localhost
+      SPRING_REDIS_PORT: 6379

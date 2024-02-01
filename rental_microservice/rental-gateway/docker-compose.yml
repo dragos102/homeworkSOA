@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  rental-gateway:
+    image: rental-gateway:latest
+    ports:
+      - "8080:8080"
+
